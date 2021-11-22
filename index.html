@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java</title>
-    
+    <script>
+
+    </script>
 </head>
 <body>
 
 <h1 id="test"></h1>
-
+<button type="button" onclick="greet()">Click here</button>
 <script>
 // console.log("hello world. ");
 document.write("<br><br>");
@@ -66,6 +68,13 @@ document.write("<br><br>");
 document.write("z times x = ", z*x)
 document.write("<br><br>");
 document.write("z divided by x =", z/x)
+document.write("<br><br>");
+
+
+function greet(){
+    let firstname = prompt ("enter your name");
+    document.write("How old are you " + firstname)
+}
 
 </script>
 </body>
