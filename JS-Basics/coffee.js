@@ -34,3 +34,28 @@ function divvie(){
     let result= a1/a2;
     document.getElementById("ans").value=result;
 }
+
+
+const diver1 = document.querySelector(".diver1")
+
+diver1.addEventListener('click',adding)
+function adding(){
+    document.write("+")
+}
+
+function marking(){
+    let pMark=parseInt(prompt("Enter your mark between 0-100"));
+    if(pMark >=80 && pMark <=100 ){
+        document.write("A")
+    }
+    else if(pMark>=70 && pMark<=79){
+      document.write("B")
+    }
+    else if(pMark>=50 && pMark<=69){
+        document.write("C")
+      }
+      else if(pMark>=0 && pMark<=49){
+        document.write("D")
+      }
+    else{document.write("invalid entry")};
+}
